@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    font-family: archivo;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+section{
+    display: flex;
+    padding-inline: 70px;
+    height: 100vh;
+}
+
+.leftContent,.rightContentImage{
+    width: 50%;
+    height: 100vh;
+}
+
+/* left side  */
+.leftContent{
+    /* background-color: beige; */
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* left h1  */
+.leftContent>h1{
+    font-size: 120px;
+    font-weight: 500;
+    padding-right: 200px;
+    line-height: 1;
+}
+
+/* color box  */
+.leftContent>.lcontent{
+    padding: 40px 0;
+}
+.leftContent>.lcontent>.color{
+    width: 120px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 10px; */
+}
+.leftContent>.lcontent>.color>p{
+    font-size: 14px;
+}
+.leftContent>.lcontent>.color>.colorBox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.leftContent>.lcontent>.color>.colorBox>.color1,.color2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.leftContent>.lcontent>.color>.colorBox>.color1{background-color: brown;}
+.leftContent>.lcontent>.color>.colorBox>.color2{background-color: black;}
+
+/* color box details  */
+
+.leftContent>.lcontent>.details{
+    margin-top: 20px;
+}
+.leftContent>.lcontent>.details>h4{
+    font-size: 16px;
+}
+.leftContent>.lcontent>.details>p{
+    font-size: 15px;
+    padding-right: 310px;
+    word-spacing: 3.5px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* right side  */
+
+.rightContentImage{
+    padding-top: 200px;
+    padding-right: 170px;
+    padding-left: 80px;
+    /* background-color: aqua; */
+}
+.rightContentImage>.rContent{
+    height: 100%;
+    padding-left: 15px;
+    position: relative;
+}
+.rightContentImage>.rContent>.rPricing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.rightContentImage>.rContent>.rImage{
+    height: calc(100% - 70px);
+    background-color: aqua;
+    background: url(https://images.unsplash.com/photo-1609868656710-4f299e957ec5?q=80&w=2818&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.rightContentImage>.rContent>p{
+    position: absolute;
+    top: 80%;
+    left: -25%;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+}
+.rightContentImage>.rContent>.bag{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: -20%;
+    font-size: 20px;
+    background-color: black;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
